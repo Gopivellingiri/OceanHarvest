@@ -1,0 +1,316 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Josefin+Sans:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 62.5%;
+  line-height: 2.5rem;
+}
+
+.nav-logo {
+  width: 20rem;
+}
+
+.logo {
+  display: inline-block;
+  width: 100%;
+}
+
+.container {
+  max-width: 120rem;
+  padding: 0 2rem 0 2rem;
+}
+
+.navigation {
+  background-color: #040608;
+  padding: 2rem 0;
+}
+.nav-container {
+  display: grid;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.grid-3--column {
+  grid-template-columns: auto auto auto;
+}
+
+.grid-3fr--column {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-2--column {
+  grid-template-columns: 1fr 1fr;
+}
+
+.nav-content {
+  list-style: none;
+  text-decoration: none;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.nav-list a:link,
+.nav-list a:visited {
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #fff;
+  transition: all 0.3s;
+}
+.nav-list a:hover,
+.nav-list a:active {
+  color: #c19976;
+}
+
+.nav-list a {
+  position: relative;
+}
+
+.nav-list a::after {
+  content: "";
+  position: absolute;
+  bottom: -1rem;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  width: 6px;
+  height: 6px;
+  background-color: #c19976;
+  opacity: 0;
+  transition: opacity 0.3s;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+.nav-list a:hover::after {
+  opacity: 1;
+}
+
+.btn {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  padding: 1.5rem;
+  background-color: #c19976;
+}
+
+.header {
+  background-color: #090c11;
+}
+
+.hero-section {
+  padding: 9.2rem 0;
+  display: grid;
+  align-items: center;
+}
+
+.banner-img {
+  display: inline-block;
+  width: 100%;
+}
+
+.main-heading {
+  font-size: 5.4rem;
+  line-height: 7.2rem;
+  color: #fff;
+  font-weight: 400;
+  padding-bottom: 2rem;
+}
+
+.chef-content {
+  background-color: #040608;
+  padding: 7rem 0;
+}
+
+.chef-container {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.chef-img {
+  width: 100%;
+}
+.philo {
+  display: block;
+  text-align: center;
+  font-size: 2.4rem;
+  font-style: italic;
+  font-family: "Crimson Pro", serif;
+  padding-bottom: 2rem;
+  color: #c19976;
+}
+
+.chef-text {
+  color: #fff;
+  text-align: center;
+  font-size: 4.4rem;
+  font-weight: 500;
+  line-height: 5.4rem;
+}
+
+.divider {
+  width: 65%;
+  display: block;
+  margin: 0 auto;
+}
+.chef-para {
+  text-align: center;
+  letter-spacing: 1px;
+  color: #fff;
+  font-size: 1.6rem;
+  width: 100%;
+  padding: 2rem 0;
+}
+.sign {
+  width: 100%;
+  transform: rotate(-10deg);
+}
+
+.brands {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+brand-logo img {
+  max-width: 100%;
+  display: block;
+}
+
+.section-brands {
+  background-color: #040608;
+  padding-bottom: 7rem;
+}
+
+.dish {
+  padding: 2rem 0;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.dish--1 {
+  width: 100%;
+}
+
+.dishes {
+  background-color: #090c11;
+  padding: 7rem 0;
+  position: relative;
+  z-index: 1;
+}
+
+.sm-heading,
+.md-heading {
+  text-align: center;
+}
+.sm-heading {
+  font-size: 2.4rem;
+  font-style: italic;
+  font-family: "Crimson Pro", serif;
+  padding-bottom: 2rem;
+  color: #c19976;
+}
+
+.md-heading {
+  color: #fff;
+  text-align: center;
+  font-size: 4.4rem;
+  font-weight: 500;
+  line-height: 5.4rem;
+}
+
+.divider-sm-width {
+  width: 20%;
+}
+
+.bg-text {
+  font-size: 20rem;
+  text-transform: uppercase;
+  text-align: center;
+  position: absolute;
+  font-weight: 300;
+  left: 15%;
+  top: 40%;
+  letter-spacing: 5px;
+  color: #040608;
+  opacity: 65%;
+  z-index: -1;
+}
+
+.section-receipe {
+  background-color: #040608;
+  padding: 7rem 0;
+}
+
+.receipe-container {
+  display: grid;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.receipe-num,
+.receipe-heading,
+.receipe-text {
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 300;
+  line-height: 2.6rem;
+}
+
+.receipe-text {
+  font-size: 1.8rem;
+}
+
+.receipe-num,
+.receipe-heading {
+  font-size: 2.6rem;
+  font-weight: 400;
+  padding: 1rem 0;
+}
+
+.rec-img {
+  width: 15%;
+  opacity: 50%;
+}
+
+.receipe-num {
+  color: #c19976;
+}
+
+.rec-imgs {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+.icon-arr {
+  padding: 1rem 0;
+  font-size: 3.2rem;
+  color: #c19976;
+}
+
+.bg-img {
+  background-image: url(./img/bg-img.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.img-of-food {
+  width: 100%;
+}
