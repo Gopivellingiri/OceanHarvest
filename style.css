@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap");
 
-@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Josefin+Sans:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap");
 
 * {
   margin: 0;
@@ -9,9 +9,23 @@
 }
 
 body {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 62.5%;
-  line-height: 2.5rem;
+  line-height: 1.75;
+  letter-spacing: 2px;
+}
+
+:root {
+  --primary-color: #040608;
+  --secondary-color: #090c11;
+  --primary-font-size: 3.9rem;
+  --button-font-size: 1.02rem;
+  --primary-heading: 4.8rem;
+  --secondary-heading: 3.2rem;
+  --secondary-subheading: 2.5rem;
+  --primary-padding: 9.2rem;
+  --sm-text-padding: 1rem;
+  --md-text-padding: 2rem;
 }
 
 .nav-logo {
@@ -25,12 +39,12 @@ body {
 
 .container {
   max-width: 120rem;
-  padding: 0 2rem 0 2rem;
+  padding: 0 var(--md-text-padding) 0 var(--md-text-padding);
 }
 
 .navigation {
-  background-color: #040608;
-  padding: 2rem 0;
+  background-color: var(--primary-color);
+  padding: var(--md-text-padding) 0;
 }
 .nav-container {
   display: grid;
@@ -53,7 +67,7 @@ body {
 .nav-content {
   list-style: none;
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: var(--button-font-size);
   display: flex;
   flex-direction: row;
   gap: 2rem;
@@ -97,19 +111,19 @@ body {
 .btn {
   text-decoration: none;
   color: #fff;
-  font-size: 1.2rem;
+  font-size: 1.02rem;
   text-transform: uppercase;
   letter-spacing: -1px;
-  padding: 1.5rem;
+  padding: var(--sm-text-padding);
   background-color: #c19976;
 }
 
 .header {
-  background-color: #090c11;
+  background-color: var(--secondary-color);
 }
 
 .hero-section {
-  padding: 9.2rem 0;
+  padding: var(--primary-padding) 0;
   display: grid;
   align-items: center;
 }
@@ -120,16 +134,16 @@ body {
 }
 
 .main-heading {
-  font-size: 5.4rem;
-  line-height: 7.2rem;
+  font-size: var(--primary-font-size);
+  line-height: 1.2;
   color: #fff;
-  font-weight: 400;
-  padding-bottom: 2rem;
+  font-weight: 200;
+  padding-bottom: var(--md-text-padding);
 }
 
 .chef-content {
-  background-color: #040608;
-  padding: 7rem 0;
+  background-color: var(--primary-color);
+  padding: var(--primary-padding) 0;
 }
 
 .chef-container {
@@ -145,17 +159,14 @@ body {
 .philo {
   display: block;
   text-align: center;
-  font-size: 2.4rem;
-  font-style: italic;
-  font-family: "Crimson Pro", serif;
-  padding-bottom: 2rem;
+  font-size: var(--secondary-subheading);
   color: #c19976;
 }
 
 .chef-text {
   color: #fff;
   text-align: center;
-  font-size: 4.4rem;
+  font-size: var(--secondary-heading);
   font-weight: 500;
   line-height: 5.4rem;
 }
@@ -168,10 +179,11 @@ body {
 .chef-para {
   text-align: center;
   letter-spacing: 1px;
+  font-weight: 300;
   color: #fff;
   font-size: 1.6rem;
   width: 100%;
-  padding: 2rem 0;
+  padding: var(--sm-text-padding) 0;
 }
 .sign {
   width: 100%;
@@ -190,12 +202,12 @@ brand-logo img {
 }
 
 .section-brands {
-  background-color: #040608;
-  padding-bottom: 7rem;
+  background-color: var(--primary-color);
+  padding-bottom: var(--primary-padding);
 }
 
 .dish {
-  padding: 2rem 0;
+  padding: var(--sm-text-padding) 0;
   display: grid;
   align-items: center;
   justify-content: center;
@@ -207,7 +219,7 @@ brand-logo img {
 }
 
 .dishes {
-  background-color: #090c11;
+  background-color: var(--secondary-color);
   padding: 7rem 0;
   position: relative;
   z-index: 1;
@@ -218,17 +230,15 @@ brand-logo img {
   text-align: center;
 }
 .sm-heading {
-  font-size: 2.4rem;
-  font-style: italic;
-  font-family: "Crimson Pro", serif;
-  padding-bottom: 2rem;
+  font-size: var(--secondary-subheading);
+
   color: #c19976;
 }
 
 .md-heading {
   color: #fff;
   text-align: center;
-  font-size: 4.4rem;
+  font-size: var(--secondary-heading);
   font-weight: 500;
   line-height: 5.4rem;
 }
@@ -252,8 +262,8 @@ brand-logo img {
 }
 
 .section-receipe {
-  background-color: #040608;
-  padding: 7rem 0;
+  background-color: var(--primary-color);
+  padding: var(--primary-padding) 0;
 }
 
 .receipe-container {
@@ -272,12 +282,12 @@ brand-logo img {
 }
 
 .receipe-text {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 
 .receipe-num,
 .receipe-heading {
-  font-size: 2.6rem;
+  font-size: var(--secondary-subheading);
   font-weight: 400;
   padding: 1rem 0;
 }
@@ -300,17 +310,191 @@ brand-logo img {
 
 .icon-arr {
   padding: 1rem 0;
-  font-size: 3.2rem;
+  font-size: var(--secondary-heading);
   color: #c19976;
 }
 
 .bg-img {
-  background-image: url(./img/bg-img.jpg);
+  background-image: url(./img/bg-img.jpg),
+    linear-gradient(to bottom left, #363636, #fff);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-blend-mode: multiply;
 }
 
 .img-of-food {
   width: 100%;
+}
+
+.offer-grid {
+  padding: var(--primary-padding) 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+}
+
+p.offer-subtext {
+  font-size: var(--secondary-subheading);
+  color: #c19976;
+}
+
+.offer-heading {
+  color: #fff;
+  font-size: var(--secondary-heading);
+  font-weight: 500;
+  line-height: 5.4rem;
+}
+
+/* .menu-text {
+  font-size: 1.8rem;
+  color: #fff;
+  padding-bottom: 1rem;
+  font-weight: 400;
+}
+
+.menu {
+  position: relative;
+}
+
+.menu-text::after {
+  content: "";
+  border-bottom: 1px dotted #fff;
+} */
+
+/* .menu-group {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  list-style: none;
+  font-size: 2rem;
+  color: #fff;
+  padding-bottom: 7rem;
+}
+
+.menu-list-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.food::after {
+  content: "";
+  display: block;
+  color: #fff;
+  border-bottom: 2px dotted #fff;
+  width: 100%;
+  overflow: hidden;
+  direction: ltr;
+}
+
+.sub-des {
+  font-size: 1.4rem;
+} */
+
+.list-head,
+.price {
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+.des {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.dots {
+  flex-grow: 1;
+  border-bottom: 2px dotted #fff;
+  margin: 1rem 0;
+}
+
+.des-text {
+  font-size: 1.02rem;
+  font-weight: 300;
+  color: #fff;
+}
+
+.list-items {
+  padding: 1rem 0;
+}
+
+.btn--2 {
+  padding: 1rem;
+  font-size: 1.02rem;
+  border: none;
+  cursor: pointer;
+  background-color: #c19976;
+  color: #fff;
+  transition: all 0.3s;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+}
+
+.btn--2:hover,
+.btn--2:active {
+  background-color: #081224;
+  box-shadow: inset 0 0 3px #c19976;
+  color: #fff;
+}
+
+.testimonial {
+  background-image: url(./img/bacground-img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: var(--primary-padding) 0;
+}
+
+.guest-container {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.testimonial-text {
+  font-size: 1.6rem;
+  color: #fff;
+  font-weight: 400;
+  padding: var(--sm-text-padding) 0;
+}
+
+.guest-img {
+  width: 5rem;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+.guest-name {
+  color: #fff;
+  font-size: 1.6rem;
+}
+.guest-flex {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.testimonial-content {
+  border: 2px solid #c19976;
+  padding: var(--sm-text-padding);
+}
+
+.flavor {
+  font-size: var(--secondary-heading);
+  color: #fff;
+  font-weight: 400;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.testimonial-heading {
+  padding-top: var(--primary-padding);
+}
+
+.btn-center {
+  display: block;
+  text-align: center;
+  margin: 1rem auto;
 }
