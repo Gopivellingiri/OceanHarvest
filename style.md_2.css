@@ -1,0 +1,21 @@
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  html {
+    font-family: "Oswald", sans-serif;
+    font-size: 62.5%;
+    line-height: 1.75;
+  }
+
+  .container {
+    max-width: 90em;
+    margin: 0 auto;
+  }
+
+  .container--2 {
+    max-width: 90em;
+    margin: 0 auto;
+  }
+
+  .brands {
+    display: none;
+  }
+}

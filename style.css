@@ -16,10 +16,11 @@ html {
 }
 
 :root {
-  --primary-color: #040608;
-  --secondary-color: #090c11;
+  --primary-color: #000408;
+  --secondary-color: #000808;
+  --button-color: #ff6b35;
   --primary-font-size: 3.9rem;
-  --button-font-size: 1.4rem;
+  --button-font-size: 1.6rem;
   --primary-heading: 4.8rem;
   --secondary-heading: 3.2rem;
   --secondary-subheading: 2.5rem;
@@ -46,6 +47,7 @@ html {
   max-width: 120rem;
   margin: 0 auto;
   padding: 0 var(--md-text-padding) 0 var(--md-text-padding);
+  position: relative;
 }
 
 .navigation {
@@ -89,7 +91,7 @@ html {
 }
 .nav-list a:hover,
 .nav-list a:active {
-  color: #c19976;
+  color: var(--button-color);
 }
 
 .nav-list a {
@@ -104,7 +106,7 @@ html {
   transform: translateX(-50%) rotate(45deg);
   width: 6px;
   height: 6px;
-  background-color: #c19976;
+  background-color: var(--button-color);
   opacity: 0;
   transition: opacity 0.3s;
   clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
@@ -112,16 +114,6 @@ html {
 
 .nav-list a:hover::after {
   opacity: 1;
-}
-
-.btn {
-  text-decoration: none;
-  color: #fff;
-  font-size: 1.02rem;
-  text-transform: uppercase;
-  letter-spacing: -1px;
-  padding: var(--sm-text-padding);
-  background-color: #c19976;
 }
 
 .header {
@@ -140,7 +132,7 @@ html {
 }
 
 .main-heading {
-  font-size: var(--primary-font-size);
+  font-size: var(--primary-heading);
   line-height: 1.2;
   color: #fff;
   font-weight: 200;
@@ -166,7 +158,7 @@ html {
   display: block;
   text-align: center;
   font-size: var(--secondary-subheading);
-  color: #c19976;
+  color: var(--button-color);
 }
 
 .chef-text {
@@ -238,7 +230,7 @@ brand-logo img {
 .sm-heading {
   font-size: var(--secondary-subheading);
 
-  color: #c19976;
+  color: var(--button-color);
 }
 
 .md-heading {
@@ -304,7 +296,7 @@ brand-logo img {
 }
 
 .receipe-num {
-  color: #c19976;
+  color: var(--button-color);
 }
 
 .rec-imgs {
@@ -317,7 +309,7 @@ brand-logo img {
 .icon-arr {
   padding: 1rem 0;
   font-size: var(--secondary-heading);
-  color: #c19976;
+  color: var(--button-color);
 }
 
 .bg-img {
@@ -343,7 +335,7 @@ brand-logo img {
 
 p.offer-subtext {
   font-size: var(--secondary-subheading);
-  color: #c19976;
+  color: var(--button-color);
 }
 
 .offer-heading {
@@ -432,7 +424,7 @@ p.offer-subtext {
   font-size: var(--button-font-size);
   border: none;
   cursor: pointer;
-  background-color: #c19976;
+  background-color: var(--button-color);
   color: #fff;
   transition: all 0.3s;
   text-decoration: none;
@@ -442,15 +434,16 @@ p.offer-subtext {
 
 .btn--2:hover,
 .btn--2:active {
-  background-color: #081224;
-  box-shadow: inset 0 0 3px #c19976;
-  color: #fff;
+  background-color: #fdfffc;
+  box-shadow: inset 0 0 3px #ff6b35;
+  color: var(--primary-color);
 }
 
 .testimonial {
   background-image: url(./img/bacground-img.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   padding: var(--primary-padding) 0;
 }
 
@@ -484,7 +477,7 @@ p.offer-subtext {
   gap: 1rem;
 }
 .testimonial-content {
-  border: 2px solid #c19976;
+  border: 2px solid var(--button-color);
   padding: var(--sm-text-padding);
 }
 
@@ -508,16 +501,223 @@ p.offer-subtext {
 
 .customer-count {
   background-color: var(--secondary-color);
-  padding: var(--primary-padding) 0;
+  padding: var(--md-text-padding) 0;
 }
 
 .count {
-  font-size: var(--primary-font-size);
-  color: #c19976;
+  font-size: var(--primary-heading);
+  color: var(--button-color);
   font-weight: 300;
+  letter-spacing: 2px;
 }
 
 .everyday {
   font-size: 1.4rem;
   color: #fff;
+}
+
+.clients-flexbox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.client-text {
+  line-height: 1.2;
+}
+
+.our-blog {
+  background-color: var(--secondary-color);
+  padding-top: var(--primary-padding);
+  padding-bottom: 0;
+}
+
+.blog-grid {
+  display: grid;
+  align-items: center;
+  gap: 3rem;
+  padding: 2rem 0;
+}
+
+.blog-img {
+  width: 100%;
+}
+
+.blog-1 {
+  background-color: var(--primary-color);
+}
+
+.blog-text {
+  padding: 2rem;
+}
+
+.date {
+  color: var(--button-color);
+  font-size: var(--button-font-size);
+  font-weight: 300;
+  padding: 1rem 0;
+}
+.blog-description {
+  color: #fff;
+  font-size: var(--secondary-subheading);
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.border {
+  border-top: 2px solid var(--button-color);
+  padding-bottom: 3rem;
+}
+
+.button-align {
+  text-align: center;
+  padding: var(--md-text-padding);
+}
+
+.form-section {
+  background-color: #081224;
+  padding: 4rem;
+  position: relative;
+  transform: translate(0%, 25%);
+}
+
+.form-title {
+  font-size: var(--secondary-subheading);
+  color: var(--button-color);
+  font-weight: 300;
+  text-align: center;
+  padding: var(--sm-text-padding) 0;
+}
+
+.form-box-1 {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.form-text,
+.option-box,
+.date-box,
+.time-box {
+  display: inline-block;
+  width: 100%;
+  border: none;
+  background-color: #081224;
+  border-bottom: 1px solid var(--button-color);
+  font-size: 1.4rem;
+  padding: 1rem;
+  color: #fff;
+}
+
+.form-box-2 {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0.5rem 0;
+}
+
+.book-btn {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.footer-section {
+  background-color: #000408;
+  padding-top: 18rem;
+  padding-bottom: 7.2rem;
+}
+
+.grid-container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.contact-content {
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: #fff;
+  font-style: normal;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 300;
+  color: #fff;
+}
+
+.telphone,
+.mail {
+  display: inline-block;
+  font-size: 1.6rem;
+  color: #fff;
+  text-decoration: none;
+  font-style: normal;
+}
+.logo-ocean {
+  align-self: start;
+  overflow: hidden;
+}
+.logo-img {
+  display: block;
+  width: 75%;
+  margin: 1rem auto;
+}
+
+.quote-text {
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 300;
+  text-align: center;
+}
+
+.icon-first {
+  color: #fff;
+  font-size: 2rem;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  padding: 1rem;
+}
+
+.icon-first:hover,
+.icon-first:active {
+  color: var(--button-color);
+  border: 1px solid var(--button-color);
+  border-radius: 50%;
+  padding: 1rem;
+}
+
+.social-media {
+  text-align: center;
+  padding: 1rem;
+}
+
+.social {
+  display: inline-block;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.hours-text {
+  font-size: 1.6rem;
+  color: #fff;
+  text-align: right;
+}
+
+.weekdays {
+  color: var(--button-color);
+  padding: 1rem;
+}
+
+.hours-content {
+  text-align: right;
+}
+
+.align-self {
+  align-self: start;
+}
+
+.icon-second {
+  padding-right: 1rem;
 }

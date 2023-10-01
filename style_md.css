@@ -1,0 +1,120 @@
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  html {
+    font-family: "Oswald", sans-serif;
+    font-size: 62.5%;
+    line-height: 1.75;
+  }
+
+  .logo {
+    display: block;
+    width: 100%;
+  }
+
+  .container--2 {
+    max-width: 100%;
+  }
+
+  .nav-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+
+  .nav-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 1.8em;
+  }
+  .hero-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+  }
+  .banner-text {
+    text-align: center;
+  }
+  .banner-img {
+    display: none;
+  }
+  .chef-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .brands {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3em;
+  }
+  .dish {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+
+  .rec-imgs {
+    display: none;
+  }
+
+  .receipe-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 3em;
+  }
+  .offer-grid {
+    display: block;
+  }
+
+  .guest-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .clients-flexbox {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    gap: 3em;
+    text-align: center;
+  }
+  .blog-grid {
+    display: block;
+  }
+  .blog-1 {
+    margin: 3em 0;
+  }
+  .form-box-1,
+  .form-box-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 3em;
+  }
+
+  .align-self,
+  .hours-content {
+    justify-self: center;
+  }
+}
